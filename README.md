@@ -2,10 +2,6 @@
 
 [http://localhost:3000](http://localhost:3000)
 
-数据结构：
-事件是一个数组
-`todoList=["",""]`
-
 #### 总结
 
 1. Provider connect 是 react-redux 引入
