@@ -19,3 +19,6 @@ const mapDispatchToProps = dispatch => {
   return {toggleTodo: id => dispatch(toggle(id))}
 }
 ```
+
+6. 多个 reducer 需要用 combineReducers 方法将 reducer 合并在一起
+7. reducer 的传入值相同，返回结果一定相同。在 reducer 中不要修改传入的 state，可以新建一个值来进行计算返回，不应该直接修改 state。
