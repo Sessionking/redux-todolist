@@ -4,7 +4,9 @@ import {addTodoList} from './../actions'
 class Header extends Component {
   state = {value: ''}
   onChange = e => {
-    this.setState({value: e.target.value})
+    const {value} = e.target
+    if (value.trim() === '') return false
+    this.setState({value: value})
   }
   onClick = e => {
     e.preventDefault()

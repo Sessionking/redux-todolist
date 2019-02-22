@@ -10,13 +10,13 @@ class TodoList extends Component {
         {todoList &&
           todoList.length > 0 &&
           todoList.map(list => {
-            return <Todo data={list} key={list.id} onClick={toggleTodo} />
+            return <Todo data={list} key={list.id} toggleTodo={toggleTodo} />
           })}
       </ul>
     )
   }
 }
-const mapStateToProps = state => {
+const mapStateToProps = (state, ownProps) => {
   switch (state.visibleFilter) {
     case 'active':
       return {

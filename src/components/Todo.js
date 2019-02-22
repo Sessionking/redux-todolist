@@ -2,8 +2,8 @@ import React, {Component} from 'react'
 class Todo extends Component {
   onClick = e => {
     e.preventDefault()
-    const {onClick, data} = this.props
-    onClick(data.id)
+    const {toggleTodo, data} = this.props
+    toggleTodo(data.id)
   }
   render() {
     const {data} = this.props
